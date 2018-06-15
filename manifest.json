@@ -1,0 +1,17 @@
+{
+  "name": "RegExp Search",
+  "description": "Add RegExp Search on web-pages",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "icons": {
+     "32": "icons/icon-search-32x32.png",
+     "48": "icons/icon-search-48x48.png",
+    "128": "icons/icon-search-128x128.png",
+    "256": "icons/icon-search-256x256.png"
+  },
+  "content_scripts": [{
+  "js": ["regexp-search.js"],
+    "matches": ["<all_urls>"],
+    "run_at": "document_start"
+  }]
+}
